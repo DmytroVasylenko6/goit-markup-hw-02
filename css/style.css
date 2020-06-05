@@ -1,5 +1,7 @@
 :root {
   --title-text-color: #212121;
+  --porfolio-h-color: #212121;
+  --portfolio-p-color: #757575;
 }
 
 body {
@@ -207,6 +209,16 @@ body {
   color: #2196f3;
 }
 
+.invitation {
+  background-color: gray;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .developers {
   background-color: gray;
   font-weight: normal;
@@ -215,4 +227,42 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+}
+
+/* -------------------ПОРТФОЛИО------------------*/
+.input {
+  background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.input:hover,
+.input:focus {
+  color: #ffffff;
+  background: #2196f3;
+}
+
+.portfolio {
+  text-decoration: none;
+}
+
+.portfolio-title {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--porfolio-h-color);
+}
+
+.portfolio-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
