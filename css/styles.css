@@ -119,3 +119,7 @@ body {
 .section-team {
   background-color: var(--secondary-white-color);
 }
+
+.teammate-card {
+  background-color: var(--primary-bg-color);
+}
