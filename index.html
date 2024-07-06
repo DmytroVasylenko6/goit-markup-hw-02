@@ -1,399 +1,160 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Веб-студия</title>
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <!-- Главная навигация -->
+    <!-- START HEADER -->
+    <header class="site-header">
       <nav>
-        <a href="./index.html" class="logo-webstudio">
-          <span class="web">Web</span>
-          <span class="studio">Studio</span>
+        <a href="./index.html" class="site-logo link">
+          Web<span class="lsite-logo-blue">Studio</span>
         </a>
-
-        <!-- Ссылки на другие страницы или разделы текущей страницы-->
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link active">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <li><a href="./index.html" class="link">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Contacts</a></li>
         </ul>
       </nav>
-
-      <!--Контакты-->
-      <address>
-        <ul class="contacts-header list">
-          <li><a href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111"> +38 096 111 11 11</a></li>
+      <address class="site-nav-address">
+        <ul class="site-nav list">
+          <li><a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a></li>
+          <li><a href="tel:+110001111111" class="contacts link">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
     </header>
-
+    <!-- END HEADER -->
     <main>
-      <!--Section-1-->
-      <section class="section-title">
-        <h1 class="title">
-          эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <div class="center">
-          <button type="button" class="button">Заказать услугу</button>
-        </div>
+      <!-- START Section HERO -->
+      <section class="hero">
+        <h1 class="section-banner-title">Effective Solutions for Your Business</h1>
+        <button type="button" class="btn-banner">Order Service</button>
       </section>
+      <!-- END Section HERO -->
 
-      <!--Section-2-->
-      <section>
-        <h2>Нашы личные качества</h2>
-        <ul class="personal-qualities list">
+      <!-- START Section FEATURES -->
+      <section class="section-features">
+        <h2 hidden class="section-title">Features</h2>
+        <ul class="section-list list">
           <li>
-            <img src="./images/Group.svg" alt="картинка" width="70" />
-            <h3 class="qualities">Внимание к деталям</h3>
-            <p>
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
+            <h3 class="card-title">Strategy</h3>
+            <p class="section-text">
+              Our goal is to identify the business problem to walk away with the perfect and
+              creative solution.
             </p>
           </li>
           <li>
-            <img src="./images/clock1.svg" alt="картинка" width="70" />
-            <h3 class="qualities">Пунктуальность</h3>
-            <p>
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
+            <h3 class="card-title">Punctuality</h3>
+            <p class="section-text">
+              Bring the key message to the brand's audience for the best price within the shortest
+              possible time.
             </p>
           </li>
           <li>
-            <img src="./images/Vector.svg" alt="картинка" width="70" />
-            <h3 class="qualities">Планирование</h3>
-            <p>
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
+            <h3 class="card-title">Diligence</h3>
+            <p class="section-text">
+              Research and confirm brands that present the strongest digital growth opportunities
+              and minimize risk.
             </p>
           </li>
           <li>
-            <img src="./images/astronaut1.svg" alt="картинка" width="70" />↩
-
-            <h3 class="qualities">Современные технологии</h3>
-            <p>
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
+            <h3 class="card-title">Technologies</h3>
+            <p class="section-text">
+              Design practice focused on digital experiences. We bring forth a deep passion for
+              problem-solving.
             </p>
           </li>
         </ul>
       </section>
+      <!-- END Section FEATURES -->
 
-      <!--Section-3-->
-      <section>
-        <h2 class="work-title">Чем мы занимаемся</h2>
-
-        <ul class="work-list list">
+      <!-- START Section TEAM -->
+      <section class="section-team">
+        <h2 class="section-title">Our Team</h2>
+        <ul class="section-list list">
           <li>
-            <img src="./images/img.jpg" alt="картинка" width="370" />
-            <h3>Десктопные приложения</h3>
+            <img src="./images/mark_guerrero.jpg" alt="Product Designer photo" width="264" />
+            <h3 class="card-title">Mark Guerrero</h3>
+            <p class="section-text">Product Designer</p>
           </li>
-
           <li>
-            <img src="./images/box.jpg" alt="картинка" width="370" />
-            <h3>Мобильные приложения</h3>
+            <img src="./images/tom_ford.jpg" alt="Frontend Developer photo" width="264" />
+            <h3 class="card-title">Tom Ford</h3>
+            <p class="section-text">Frontend Developer</p>
           </li>
-
           <li>
-            <img src="./images/img2.jpg" alt="картинка" width="370" />
-            <h3>Дизайнерские решения</h3>
+            <img src="./images/camila_garcia.jpg" alt="Marketing Manager photo" width="264" />
+            <h3 class="card-title">Camila Garcia</h3>
+            <p class="section-text">Marketing</p>
           </li>
-        </ul>
-      </section>
-
-      <!--Section-4-->
-      <section>
-        <h2 class="ourtaem-title">Наша команда</h2>
-
-        <ul class="ourteam list">
-          <li class="">
-            <img src="./images/img-1.jpg" alt="фото_сотрудника" />
-            <h3 lang="en">John Smith</h3>
-            <p lang="en">Product Designer</p>
-
-            <!--Social links-->
-
-            <ul>
-              <li>
-                <a href="https://www.instagram.com"
-                  ><img
-                    src="./images/Instagram_1.svg"
-                    alt="инстаграм"
-                    width="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/"
-                  ><img src="./images/Twitter_1.svg" alt="твиттер" width="44" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/"
-                  ><img
-                    src="./images/Facebook_1.svg"
-                    alt="фейсбук"
-                    width="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/"
-                  ><img
-                    src="./images/Linkedin_1.svg"
-                    alt="линкедин"
-                    width="44"
-                  />
-                </a>
-              </li>
-            </ul>
-          </li>
-
           <li>
-            <img src="./images/img-2.jpg" alt="фото_сотрудника" />
-            <h3 lang="en">Marta Stewart</h3>
-            <p lang="en">Frontend Developer</p>
-
-            <!--Social links-->
-
-            <ul>
-              <li>
-                <a href="https://www.instagram.com"
-                  ><img
-                    src="./images/Instagram_1.svg"
-                    alt="инстаграм"
-                    width="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/"
-                  ><img src="./images/Twitter_1.svg" alt="твиттер" width="44" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/"
-                  ><img
-                    src="./images/Facebook_1.svg"
-                    alt="фейсбук"
-                    width="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/"
-                  ><img
-                    src="./images/Linkedin_1.svg"
-                    alt="линкедин"
-                    width="44"
-                  />
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <img src="./images/img-3.jpg" alt="фото_сотрудника" />
-            <h3 lang="en">Robert Jakis</h3>
-            <p lang="en">Marketing</p>
-
-            <!--Social links-->
-
-            <ul>
-              <li>
-                <a href="https://www.instagram.com"
-                  ><img
-                    src="./images/Instagram_1.svg"
-                    alt="инстаграм"
-                    width="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/"
-                  ><img src="./images/Twitter_1.svg" alt="твиттер" width="44" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/"
-                  ><img
-                    src="./images/Facebook_1.svg"
-                    alt="фейсбук"
-                    width="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/"
-                  ><img
-                    src="./images/Linkedin_1.svg"
-                    alt="линкедин"
-                    width="44"
-                  />
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <img src="./images/img-4.jpg" alt="фото_сотрудника" />
-            <h3 lang="en">Martin Doe</h3>
-            <p lang="en">UI Designer</p>
-
-            <!--Social links-->
-
-            <ul>
-              <li>
-                <a href="https://www.instagram.com"
-                  ><img
-                    src="./images/Instagram_1.svg"
-                    alt="инстаграм"
-                    width="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/"
-                  ><img src="./images/Twitter_1.svg" alt="твиттер" width="44" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/"
-                  ><img
-                    src="./images/Facebook_1.svg"
-                    alt="фейсбук"
-                    width="44"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/"
-                  ><img
-                    src="./images/Linkedin_1.svg"
-                    alt="линкедин"
-                    width="44"
-                  />
-                </a>
-              </li>
-            </ul>
+            <img src="./images/daniel_wilson.jpg" alt="UI Designer photo" width="264" />
+            <h3 class="card-title">Daniel Wilson</h3>
+            <p class="section-text">UI Designer</p>
           </li>
         </ul>
       </section>
+      <!-- END Section TEAM -->
 
-      <!--Section-5-->
-      <section class="regular-customers">
-        <h2 class="customers-title">Постоянные клиенты</h2>
-        <ul class="customers-link list">
+      <!-- Section PORTFOLIO -->
+      <section class="section-porfolio">
+        <h2 class="section-title">Our Portfolio</h2>
+        <ul class="section-list list">
           <li>
-            <a href=""
-              ><img
-                src="./images/client/Client1.svg"
-                alt="клиент1"
-                width="170"
-              />
-            </a>
+            <img src="./images/portfolio-1.jpg" alt="Banking App photo" width="360" />
+            <h3 class="card-title">Banking App</h3>
+            <p class="section-text">App</p>
           </li>
           <li>
-            <a href=""
-              ><img
-                src="./images/client/Client2.svg"
-                alt="клиент2"
-                width="170"
-              />
-            </a>
+            <img src="./images/portfolio-2.jpg" alt="Cashless Payment photo" width="360" />
+            <h3 class="card-title">Cashless Payment</h3>
+            <p class="section-text">Marketing</p>
           </li>
           <li>
-            <a href=""
-              ><img
-                src="./images/client/Client3.svg"
-                alt="клиент3"
-                width="170"
-              />
-            </a>
+            <img src="./images/portfolio-3.jpg" alt="Meditation App photo" width="360" />
+            <h3 class="card-title">Meditation App</h3>
+            <p class="section-text">App</p>
           </li>
           <li>
-            <a href=""
-              ><img
-                src="./images/client/Client4.svg"
-                alt="клиент4"
-                width="170"
-              />
-            </a>
+            <img src="./images/portfolio-4.jpg" alt="Taxi Service photo" width="360" />
+            <h3 class="card-title">Taxi Service</h3>
+            <p class="section-text">Marketing</p>
           </li>
           <li>
-            <a href=""
-              ><img
-                src="./images/client/Client5.svg"
-                alt="клиент5"
-                width="170"
-              />
-            </a>
+            <img src="./images/portfolio-5.jpg" alt="Screen Illustrations photo" width="360" />
+            <h3 class="card-title">Screen Illustrations</h3>
+            <p class="section-text">Design</p>
           </li>
           <li>
-            <a href=""
-              ><img
-                src="./images/client/Client6.svg"
-                alt="клиент6"
-                width="170"
-              />
-            </a>
+            <img src="./images/portfolio-6.jpg" alt="Online Courses photo" width="360" />
+            <h3 class="card-title">Online Courses</h3>
+            <p class="section-text">Marketing</p>
           </li>
         </ul>
       </section>
     </main>
+    <!-- END Section PORTFOLIO -->
 
-    <!-- Подвал страницы -->
-    <footer>
-      <a href="./index.html" class="logo-footer">
-        <span class="web-footer">Web</span>
-        <span class="studio-footer">Studio</span>
+    <!-- START FOOTER -->
+    <footer class="site-footer">
+      <a href="./index.html" class="site-logo link">
+        Web<span class="site-logo-white">Studio</span>
       </a>
-
-      <!--Список контактов-->
-      <address>
-        <span class="address">г. Киев, пр-т Леси Украинки, 26</span>
-        <ul class="contacts-footer list">
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
-
-      <!--Список соцсетей-->
-      <p class="invitation"><b>Присоединяйтесь</b></p>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com"
-            ><img src="./images/Instagram_1.svg" alt="инстаграм" width="44" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/"
-            ><img src="./images/Twitter_1.svg" alt="твиттер" width="44" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/"
-            ><img src="./images/Facebook_1.svg" alt="фейсбук" width="44" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/"
-            ><img src="./images/Linkedin_1.svg" alt="линкедин" width="44" />
-          </a>
-        </li>
-      </ul>
-      <hr />
-      <p class="developers">2020 | Developed by GoIT Students</p>
+      <p>
+        Increase the flow of customers and sales for your business with digital marketing & growth
+        solutions.
+      </p>
     </footer>
+    <!--END  FOOTER -->
   </body>
 </html>
